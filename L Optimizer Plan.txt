@@ -1,0 +1,20 @@
+Purpose: give long term overview of what our pace needs to be for the race (short term will allow us to shift the pace accordingly)
+
+(must be able to start at any place and time)
+
+race properties/race rules: constants/bounds that are checked
+
+#first velocity is random
+
+(loop this n times, have ability to change the code to vary number of simulations per loop)
+(ensure a loop of loops won't kill this)
+
+-loop:
+	simulator: pass data to simulator and get race time (vector)
+	score: function that rates vectors from simulations
+	compare: update best scoring vector based on score
+	Simulation Operator: checks if we have loop n times (and other things), and if we have met 	all conditions, output best vector found
+
+-choose v (tbd, must be flexible): chooses velocities for next set of simulations
+
+**simulator: input = velocity list, output = time taken**
